@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	Optional theme
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="jumbotton">
+		<h1>Let's practise</h1>
+		<button class="panel-button" data-panelid="panel1">#btn1</button>
+		<button class="panel-button" data-panelid="panel2">#btn2</button>
+		<button class="panel-button" data-panelid="panel3">#btn3</button>
+		<button class="panel-button" data-panelid="panel4">#btn4</button>
+		<!-- <button id="btn1">#btn1</button>
+		<button id="btn2">#btn2</button>
+		<button id="btn3">#btn3</button>
+		<button id="btn4">#btn4</button> -->
+	</div>
+
+	<div class="row">
+		<div class="col-xs-3">
+			<div id="panel1" style="display:none" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel1
+				</div>
+				<div class="panel-body">content</div>
+			</div>
+		</div>
+
+		<div class="col-xs-3">
+			<div id="panel2" style="display:none" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel2
+				</div>
+				<div class="panel-body">content</div>
+			</div>
+		</div>
+
+		<div class="col-xs-3">
+			<div id="panel3" style="display:none" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel3
+				</div>
+				<div class="panel-body">content</div>
+			</div>
+		</div>
+
+		<div class="col-xs-3">
+			<div id="panel4" style="display:none" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel4
+				</div>
+				<div class="panel-body">content</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!-- <script src="bower_components/jquery/jquery.js"></script>
+ -->
+	<script type="text/javascript">
+		$(function() {
+
+			$('.panel-button').on('click', function(){
+				var panelId = $(this).attr('data-panelId');
+				$('#' + panelId).toggle();
+			});
+			
+
+			// $('#btn1').on('click', function(){
+			// 	$('#panel1').toggle();
+			// 	// $('#panel1 .panel-body').html('my new panel content 123456');
+
+			// });
+
+			// $('#btn2').on('click', function(){
+			// 	$('#panel2').toggle();
+			// });
+
+			// $('#btn3').on('click', function(){
+			// 	$('#panel3').toggle();
+			// });
+
+			// $('#btn4').on('click', function(){
+			// 	$('#panel4').toggle();
+			// });
+
+		});
+	</script>
+</body>
+</html>
