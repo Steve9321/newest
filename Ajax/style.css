@@ -1,0 +1,27 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Granda", Helvetice, Arial, sana-serif;
+}
+
+a {
+	color: #0087FF;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	background: #efefef;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+ul li .edit{
+	display: none;
+}
+
+ul li.edit .noeidt {
+	display: none;
+}
